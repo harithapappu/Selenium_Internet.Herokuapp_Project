@@ -1,0 +1,2702 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset='utf-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/b4a58fcfd1e137bd9287244035a7c80d3d73b3af/dist/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>Test Execution Report</title>
+
+	<style type='text/css'>
+	</style>
+</head>
+
+	<body class='extent standard default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo blue darken-3">Extent</a>
+
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+		</ul>
+
+		<!-- report name -->
+		<span class='report-name'>Internet HerokuApp Automation Tests</span>
+		
+		<!-- report headline -->
+		<span class='report-headline'></span>
+
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<li>
+                <a href='#!'>
+                    <span class='label suite-start-time blue darken-3'>Jan 11, 2023 08:38:07 AM</span>
+				</a>
+			</li>
+			<li>
+                <a href='#!'>
+                    <span class='label blue darken-3'>3.1.5</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+		<!-- container -->
+		<div class='container'>
+
+<div id='test-view' class='view'>
+				
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+
+			<!-- category toggle -->
+			<!-- category toggle -->
+
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+					<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+					<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+
+<div id='test-view-charts' class='subview-full'>
+	<div id='charts-row' class='row nm-v nm-h'>
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Tests</div>
+				<div class='chart-box'>
+					<canvas id='parent-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='95.349%'><span class='strong'>41</span> test(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='4.651%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+				</div>
+			</div>
+		</div>
+		
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Steps</div>
+				<div class='chart-box'>
+					<canvas id='child-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='2.404%'><span class='strong'>5</span> step(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='0.962%'>2</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='96.635%'>201</span> others
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Tests</h5>
+			<ul id='test-collection' class='test-collection'>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>launchABTestingTC2</span>
+						<span class='test-time'>Jan 11, 2023 08:38:08 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:38:08 AM</span>
+	<span class='label end-time'>Jan 11, 2023 08:38:48 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 39s+862ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:38:40 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:38:45 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:38:48 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchABTestingTC2</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:38:48 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchABTestingTC2</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchABTestingTC2.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchABTestingTC2.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchABTestingTC2.jpg'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>launchAddRemoveElementsTC3</span>
+						<span class='test-time'>Jan 11, 2023 08:38:55 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:38:55 AM</span>
+	<span class='label end-time'>Jan 11, 2023 08:39:22 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 26s+967ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:39:13 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:39:17 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:39:22 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchAddRemoveElementsTC3</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:39:22 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchAddRemoveElementsTC3</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchAddRemoveElementsTC3.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchAddRemoveElementsTC3.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchAddRemoveElementsTC3.jpg'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>launchBasicAuthTC4</span>
+						<span class='test-time'>Jan 11, 2023 08:39:28 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:39:28 AM</span>
+	<span class='label end-time'>Jan 11, 2023 08:39:49 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+187ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:39:45 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:39:49 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>launchBrokenImagesTC5</span>
+						<span class='test-time'>Jan 11, 2023 08:39:58 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:39:58 AM</span>
+	<span class='label end-time'>Jan 11, 2023 08:40:23 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 24s+762ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:40:15 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:40:19 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:40:23 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchBrokenImagesTC5</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:40:23 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchBrokenImagesTC5</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchBrokenImagesTC5.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchBrokenImagesTC5.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchBrokenImagesTC5.jpg'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>launchChallengingDOMTC6</span>
+						<span class='test-time'>Jan 11, 2023 08:40:30 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:40:30 AM</span>
+	<span class='label end-time'>Jan 11, 2023 08:41:02 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 32s+165ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:40:48 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:40:52 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:41:02 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchChallengingDOMTC6</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:41:02 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchChallengingDOMTC6</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchChallengingDOMTC6.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchChallengingDOMTC6.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchChallengingDOMTC6.jpg'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>launchCheckboxesTC7</span>
+						<span class='test-time'>Jan 11, 2023 08:41:10 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:41:10 AM</span>
+	<span class='label end-time'>Jan 11, 2023 08:41:36 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 26s+359ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:41:30 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:41:33 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:41:36 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchCheckboxesTC7</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:41:36 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchCheckboxesTC7</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchCheckboxesTC7.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchCheckboxesTC7.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchCheckboxesTC7.jpg'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>launchContextMenuTC8</span>
+						<span class='test-time'>Jan 11, 2023 08:41:43 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:41:43 AM</span>
+	<span class='label end-time'>Jan 11, 2023 08:42:05 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 22s+340ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:42:01 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:42:05 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'>launchDisaapearingElementsTC9</span>
+						<span class='test-time'>Jan 11, 2023 08:42:15 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:42:15 AM</span>
+	<span class='label end-time'>Jan 11, 2023 08:43:11 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 56s+261ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:42:33 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:42:38 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:43:11 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchDisaapearingElementsTC9</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:43:11 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchDisaapearingElementsTC9</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchDisaapearingElementsTC9.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchDisaapearingElementsTC9.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchDisaapearingElementsTC9.jpg'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>launchDragAndDropTC10</span>
+						<span class='test-time'>Jan 11, 2023 08:43:19 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:43:19 AM</span>
+	<span class='label end-time'>Jan 11, 2023 08:43:45 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 26s+426ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:43:37 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:43:42 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:43:45 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchDragAndDropTC10</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:43:45 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchDragAndDropTC10</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchDragAndDropTC10.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchDragAndDropTC10.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchDragAndDropTC10.jpg'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
+					<div class='test-heading'>
+						<span class='test-name'>launchDropdownTC11</span>
+						<span class='test-time'>Jan 11, 2023 08:43:51 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:43:51 AM</span>
+	<span class='label end-time'>Jan 11, 2023 08:44:17 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 25s+533ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:44:09 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:44:14 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:44:17 AM</td>
+					<td class='step-details'>Selected option: Option 2</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:44:17 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchDropdownTC11</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:44:17 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchDropdownTC11</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchDropdownTC11.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchDropdownTC11.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchDropdownTC11.jpg'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
+					<div class='test-heading'>
+						<span class='test-name'>launchDynamicContentTC12</span>
+						<span class='test-time'>Jan 11, 2023 08:44:23 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:44:23 AM</span>
+	<span class='label end-time'>Jan 11, 2023 08:44:50 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 26s+407ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:44:41 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:44:45 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:44:50 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchDynamicContentTC12</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:44:50 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchDynamicContentTC12</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchDynamicContentTC12.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchDynamicContentTC12.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchDynamicContentTC12.jpg'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='12'>
+					<div class='test-heading'>
+						<span class='test-name'>launchDynamicLoadingTC13</span>
+						<span class='test-time'>Jan 11, 2023 08:44:59 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:44:59 AM</span>
+	<span class='label end-time'>Jan 11, 2023 08:45:38 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 39s+470ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:45:16 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:45:20 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:45:29 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchDynamicLoading1TC13</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:45:29 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchDynamicLoading1TC13</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:45:38 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchDynamicLoading2TC13</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:45:38 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchDynamicLoading2TC13</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchDynamicLoading1TC13.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchDynamicLoading1TC13.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchDynamicLoading1TC13.jpg'></li>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchDynamicLoading2TC13.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchDynamicLoading2TC13.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchDynamicLoading2TC13.jpg'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='13'>
+					<div class='test-heading'>
+						<span class='test-name'>launchEntryAdTC14</span>
+						<span class='test-time'>Jan 11, 2023 08:45:47 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:45:47 AM</span>
+	<span class='label end-time'>Jan 11, 2023 08:46:08 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 20s+887ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:46:05 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:46:08 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='14'>
+					<div class='test-heading'>
+						<span class='test-name'>launchExitIntentTC15</span>
+						<span class='test-time'>Jan 11, 2023 08:46:20 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:46:20 AM</span>
+	<span class='label end-time'>Jan 11, 2023 08:46:42 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+497ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:46:38 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:46:42 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='15'>
+					<div class='test-heading'>
+						<span class='test-name'>launchFileDownloadTC16</span>
+						<span class='test-time'>Jan 11, 2023 08:46:51 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:46:51 AM</span>
+	<span class='label end-time'>Jan 11, 2023 08:47:12 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 20s+947ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:47:09 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:47:12 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='16'>
+					<div class='test-heading'>
+						<span class='test-name'>launchFileUploadTC17</span>
+						<span class='test-time'>Jan 11, 2023 08:47:22 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:47:22 AM</span>
+	<span class='label end-time'>Jan 11, 2023 08:47:46 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 23s+682ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:47:42 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:47:46 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='17'>
+					<div class='test-heading'>
+						<span class='test-name'>launchFloatingMenuTC18</span>
+						<span class='test-time'>Jan 11, 2023 08:47:57 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:47:57 AM</span>
+	<span class='label end-time'>Jan 11, 2023 08:48:26 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 28s+969ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:48:18 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:48:23 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:48:26 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchFloatingMenuTC18</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:48:26 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchFloatingMenuTC18</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchFloatingMenuTC18.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchFloatingMenuTC18.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchFloatingMenuTC18.jpg'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='18'>
+					<div class='test-heading'>
+						<span class='test-name'>launchForgotPasswordTC19</span>
+						<span class='test-time'>Jan 11, 2023 08:48:33 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:48:33 AM</span>
+	<span class='label end-time'>Jan 11, 2023 08:48:59 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 25s+495ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:48:50 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:48:55 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:48:59 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchForgotPasswordTC19</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:48:59 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchForgotPasswordTC19</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchForgotPasswordTC19.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchForgotPasswordTC19.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchForgotPasswordTC19.jpg'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='19'>
+					<div class='test-heading'>
+						<span class='test-name'>launchFormAuthenticationTC20</span>
+						<span class='test-time'>Jan 11, 2023 08:49:06 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:49:06 AM</span>
+	<span class='label end-time'>Jan 11, 2023 08:49:34 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 27s+938ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:49:23 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:49:27 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:49:34 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchFormAuthenticationTC20</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:49:34 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchFormAuthenticationTC20</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchFormAuthenticationTC20.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchFormAuthenticationTC20.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchFormAuthenticationTC20.jpg'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='20'>
+					<div class='test-heading'>
+						<span class='test-name'>launchFramesTC21</span>
+						<span class='test-time'>Jan 11, 2023 08:49:41 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:49:41 AM</span>
+	<span class='label end-time'>Jan 11, 2023 08:50:12 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 31s+277ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:49:58 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:50:02 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:50:04 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchFramesTC21</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:50:04 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchFramesTC21</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:50:06 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchNestedFramesTC21</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:50:06 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchNestedFramesTC21</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:50:12 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchIFramesTC21</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:50:12 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchIFramesTC21</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchFramesTC21.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchFramesTC21.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchFramesTC21.jpg'></li>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchNestedFramesTC21.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchNestedFramesTC21.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchNestedFramesTC21.jpg'></li>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchIFramesTC21.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchIFramesTC21.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchIFramesTC21.jpg'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='21'>
+					<div class='test-heading'>
+						<span class='test-name'>launchGeolocationTC22</span>
+						<span class='test-time'>Jan 11, 2023 08:50:21 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:50:21 AM</span>
+	<span class='label end-time'>Jan 11, 2023 08:50:46 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 24s+354ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:50:38 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:50:42 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:50:45 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchGeolocationTC22</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:50:45 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchGeolocationTC22</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:50:46 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchYourGeolocationTC22</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:50:46 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchYourGeolocationTC22</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchGeolocationTC22.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchGeolocationTC22.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchGeolocationTC22.jpg'></li>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchYourGeolocationTC22.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchYourGeolocationTC22.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchYourGeolocationTC22.jpg'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='22'>
+					<div class='test-heading'>
+						<span class='test-name'>launchHorizontalSliderTC23</span>
+						<span class='test-time'>Jan 11, 2023 08:50:52 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:50:52 AM</span>
+	<span class='label end-time'>Jan 11, 2023 08:51:17 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 24s+964ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:51:09 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:51:14 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:51:16 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchHorizontalSliderTC23</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:51:16 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchHorizontalSliderTC23</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:51:17 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchHorizontalSliderActionTC23</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:51:17 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchHorizontalSliderActionTC23</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchHorizontalSliderTC23.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchHorizontalSliderTC23.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchHorizontalSliderTC23.jpg'></li>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchHorizontalSliderActionTC23.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchHorizontalSliderActionTC23.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchHorizontalSliderActionTC23.jpg'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='23'>
+					<div class='test-heading'>
+						<span class='test-name'>launchHoversTC24</span>
+						<span class='test-time'>Jan 11, 2023 08:51:24 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:51:24 AM</span>
+	<span class='label end-time'>Jan 11, 2023 08:51:48 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 24s+453ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:51:40 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:51:44 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:51:47 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchHoversTC24</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:51:47 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchHoversTC24</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:51:47 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchfirstImageHoversTC24</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:51:47 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchfirstImageHoversTC24</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:51:48 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchsecondImageHoversTC24</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:51:48 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchsecondImageHoversTC24</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:51:48 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchthirdImageHoversTC24</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:51:48 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchthirdImageHoversTC24</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchHoversTC24.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchHoversTC24.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchHoversTC24.jpg'></li>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchfirstImageHoversTC24.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchfirstImageHoversTC24.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchfirstImageHoversTC24.jpg'></li>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchsecondImageHoversTC24.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchsecondImageHoversTC24.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchsecondImageHoversTC24.jpg'></li>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchthirdImageHoversTC24.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchthirdImageHoversTC24.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchthirdImageHoversTC24.jpg'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='24'>
+					<div class='test-heading'>
+						<span class='test-name'>launchInfiniteScrollTC25</span>
+						<span class='test-time'>Jan 11, 2023 08:51:55 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:51:55 AM</span>
+	<span class='label end-time'>Jan 11, 2023 08:52:22 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 26s+210ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:52:14 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:52:18 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:52:22 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchInfiniteScrollTC25</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:52:22 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchInfiniteScrollTC25</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchInfiniteScrollTC25.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchInfiniteScrollTC25.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchInfiniteScrollTC25.jpg'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='25'>
+					<div class='test-heading'>
+						<span class='test-name'>launchInputsTC26</span>
+						<span class='test-time'>Jan 11, 2023 08:52:33 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:52:33 AM</span>
+	<span class='label end-time'>Jan 11, 2023 08:52:56 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 23s+519ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:52:49 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:52:53 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:52:56 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchInputsTC26</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:52:56 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchInputsTC26</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchInputsTC26.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchInputsTC26.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchInputsTC26.jpg'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='26'>
+					<div class='test-heading'>
+						<span class='test-name'>launchInternetHerokuappTC1</span>
+						<span class='test-time'>Jan 11, 2023 08:53:03 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:53:03 AM</span>
+	<span class='label end-time'>Jan 11, 2023 08:53:23 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 19s+713ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:53:19 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:53:22 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:53:23 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchInternetHerokuappTC1</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:53:23 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchInternetHerokuappTC1</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchInternetHerokuappTC1.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchInternetHerokuappTC1.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchInternetHerokuappTC1.jpg'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='27'>
+					<div class='test-heading'>
+						<span class='test-name'>launchJQueryUIMenusTC27</span>
+						<span class='test-time'>Jan 11, 2023 08:53:29 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:53:29 AM</span>
+	<span class='label end-time'>Jan 11, 2023 08:53:51 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+417ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:53:46 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:53:51 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='28'>
+					<div class='test-heading'>
+						<span class='test-name'>launchJavaScriptAlertsTC28</span>
+						<span class='test-time'>Jan 11, 2023 08:54:00 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:54:00 AM</span>
+	<span class='label end-time'>Jan 11, 2023 08:54:28 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 27s+447ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:54:18 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:54:23 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>8:54:26 AM</td>
+					<td class='step-details'><span class='label white-text green'>launchJavaScriptAlertsTC28 is Passed</span></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:54:26 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchJavaScriptJSAlertsTC28</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:54:26 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchJavaScriptJSAlertsTC28</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>8:54:27 AM</td>
+					<td class='step-details'><span class='label white-text green'>launchJavaScriptAlertsTC28 is Passed</span></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:54:27 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchJavaScriptJSConfirmAlertsTC28</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:54:27 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchJavaScriptJSConfirmAlertsTC28</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>8:54:27 AM</td>
+					<td class='step-details'><span class='label white-text green'>launchJavaScriptAlertsTC28 is Passed</span></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:54:28 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchJavaScriptJSPromptAlertsTC28</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:54:28 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchJavaScriptJSPromptAlertsTC28</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchJavaScriptJSAlertsTC28.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchJavaScriptJSAlertsTC28.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchJavaScriptJSAlertsTC28.jpg'></li>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchJavaScriptJSConfirmAlertsTC28.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchJavaScriptJSConfirmAlertsTC28.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchJavaScriptJSConfirmAlertsTC28.jpg'></li>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchJavaScriptJSPromptAlertsTC28.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchJavaScriptJSPromptAlertsTC28.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchJavaScriptJSPromptAlertsTC28.jpg'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='29'>
+					<div class='test-heading'>
+						<span class='test-name'>launchJavaScriptOnLoadEventErrorTC29</span>
+						<span class='test-time'>Jan 11, 2023 08:54:35 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:54:35 AM</span>
+	<span class='label end-time'>Jan 11, 2023 08:54:57 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 22s+45ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:54:51 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:54:55 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:54:57 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchJavaScriptOnLoadEventErrorTC29</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:54:57 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchJavaScriptOnLoadEventErrorTC29</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchJavaScriptOnLoadEventErrorTC29.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchJavaScriptOnLoadEventErrorTC29.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchJavaScriptOnLoadEventErrorTC29.jpg'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='30'>
+					<div class='test-heading'>
+						<span class='test-name'>launchKeyPressesTC30</span>
+						<span class='test-time'>Jan 11, 2023 08:55:04 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:55:04 AM</span>
+	<span class='label end-time'>Jan 11, 2023 08:55:27 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 23s+423ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:55:19 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:55:24 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>8:55:26 AM</td>
+					<td class='step-details'><span class='label white-text green'>launchKeyPressesTC30 is Passed</span></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>8:55:27 AM</td>
+					<td class='step-details'><span class='label white-text green'>launchKeyPressesTC30 is Passed</span></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:55:27 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchKeyPressesTC30</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:55:27 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchKeyPressesTC30</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchKeyPressesTC30.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchKeyPressesTC30.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchKeyPressesTC30.jpg'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='31'>
+					<div class='test-heading'>
+						<span class='test-name'>launchLargeAndDeepDOMTC31</span>
+						<span class='test-time'>Jan 11, 2023 08:55:33 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:55:33 AM</span>
+	<span class='label end-time'>Jan 11, 2023 08:55:56 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 22s+652ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:55:49 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:55:53 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:55:56 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchLargeAndDeepDOMTC31</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:55:56 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchLargeAndDeepDOMTC31</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchLargeAndDeepDOMTC31.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchLargeAndDeepDOMTC31.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchLargeAndDeepDOMTC31.jpg'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='32'>
+					<div class='test-heading'>
+						<span class='test-name'>launchMultipleWindowsTC32</span>
+						<span class='test-time'>Jan 11, 2023 08:56:03 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:56:03 AM</span>
+	<span class='label end-time'>Jan 11, 2023 08:56:26 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 22s+896ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:56:19 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:56:22 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>8:56:25 AM</td>
+					<td class='step-details'><span class='label white-text red'>launchMultipleWindowsTC32 is not Passed</span></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:56:26 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchMultipleWindowsTC32</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:56:26 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchMultipleWindowsTC32</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchMultipleWindowsTC32.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchMultipleWindowsTC32.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchMultipleWindowsTC32.jpg'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='33'>
+					<div class='test-heading'>
+						<span class='test-name'>launchNestedFramesTC33</span>
+						<span class='test-time'>Jan 11, 2023 08:56:32 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:56:32 AM</span>
+	<span class='label end-time'>Jan 11, 2023 08:56:55 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 22s+741ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:56:48 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:56:52 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:56:55 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchNestedFramesTC33</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:56:55 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchNestedFramesTC33</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchNestedFramesTC33.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchNestedFramesTC33.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchNestedFramesTC33.jpg'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='34'>
+					<div class='test-heading'>
+						<span class='test-name'>launchNotificationMessagesTC34</span>
+						<span class='test-time'>Jan 11, 2023 08:57:01 AM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:57:01 AM</span>
+	<span class='label end-time'>Jan 11, 2023 08:57:28 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 26s+445ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:57:18 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:57:23 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>8:57:27 AM</td>
+					<td class='step-details'><span class='label white-text red'>launchNotificationMessagesTC34 is not Passed</span></td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:57:28 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchNotificationMessagesTC34</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:57:28 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchNotificationMessagesTC34</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchNotificationMessagesTC34.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchNotificationMessagesTC34.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchNotificationMessagesTC34.jpg'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='35'>
+					<div class='test-heading'>
+						<span class='test-name'>launchRedirectLinkTC35</span>
+						<span class='test-time'>Jan 11, 2023 08:57:34 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:57:34 AM</span>
+	<span class='label end-time'>Jan 11, 2023 08:58:10 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 35s+111ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:57:50 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:57:54 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:57:57 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchFirstRedirectLinkTC35</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:57:57 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchFirstRedirectLinkTC35</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:57:59 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchSecondRedirectLinkTC35</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:57:59 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchSecondRedirectLinkTC35</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:58:00 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchStatusCodes200LinkTC35</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:58:00 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchStatusCodes200LinkTC35</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:58:03 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchStatusCodes301LinkTC35</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:58:03 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchStatusCodes301LinkTC35</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:58:07 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchStatusCodes404LinkTC35</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:58:07 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchStatusCodes404LinkTC35</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:58:10 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchStatusCodes500LinkTC35</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:58:10 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchStatusCodes500LinkTC35</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchFirstRedirectLinkTC35.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchFirstRedirectLinkTC35.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchFirstRedirectLinkTC35.jpg'></li>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchSecondRedirectLinkTC35.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchSecondRedirectLinkTC35.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchSecondRedirectLinkTC35.jpg'></li>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchStatusCodes200LinkTC35.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchStatusCodes200LinkTC35.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchStatusCodes200LinkTC35.jpg'></li>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchStatusCodes301LinkTC35.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchStatusCodes301LinkTC35.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchStatusCodes301LinkTC35.jpg'></li>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchStatusCodes404LinkTC35.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchStatusCodes404LinkTC35.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchStatusCodes404LinkTC35.jpg'></li>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchStatusCodes500LinkTC35.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchStatusCodes500LinkTC35.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchStatusCodes500LinkTC35.jpg'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='36'>
+					<div class='test-heading'>
+						<span class='test-name'>launchSecureFileDownloadTC36</span>
+						<span class='test-time'>Jan 11, 2023 08:58:17 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:58:17 AM</span>
+	<span class='label end-time'>Jan 11, 2023 08:58:37 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 20s+467ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:58:34 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:58:37 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='37'>
+					<div class='test-heading'>
+						<span class='test-name'>launchShadowDOMTC37</span>
+						<span class='test-time'>Jan 11, 2023 08:58:46 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:58:46 AM</span>
+	<span class='label end-time'>Jan 11, 2023 08:59:08 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 22s+539ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:59:01 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:59:06 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:59:08 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchShadowDOMTC37</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:59:08 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchShadowDOMTC37</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchShadowDOMTC37.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchShadowDOMTC37.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchShadowDOMTC37.jpg'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='38'>
+					<div class='test-heading'>
+						<span class='test-name'>launchShiftingContentTC38</span>
+						<span class='test-time'>Jan 11, 2023 08:59:14 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:59:14 AM</span>
+	<span class='label end-time'>Jan 11, 2023 08:59:42 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 27s+871ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:59:30 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:59:35 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:59:37 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchShiftingContentTC38</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:59:37 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchShiftingContentTC38</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:59:39 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchShiftingContentMenuTC38</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:59:39 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchShiftingContentMenuTC38</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:59:41 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchShiftingContentMenuRandomTC38</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:59:41 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchShiftingContentMenuRandomTC38</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:59:42 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchShiftingContentMenuPixelsShiftTC38</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>8:59:42 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchShiftingContentMenuPixelsShiftTC38</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchShiftingContentTC38.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchShiftingContentTC38.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchShiftingContentTC38.jpg'></li>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchShiftingContentMenuTC38.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchShiftingContentMenuTC38.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchShiftingContentMenuTC38.jpg'></li>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchShiftingContentMenuRandomTC38.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchShiftingContentMenuRandomTC38.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchShiftingContentMenuRandomTC38.jpg'></li>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchShiftingContentMenuPixelsShiftTC38.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchShiftingContentMenuPixelsShiftTC38.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchShiftingContentMenuPixelsShiftTC38.jpg'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='39'>
+					<div class='test-heading'>
+						<span class='test-name'>launchSlowResourcesTC39</span>
+						<span class='test-time'>Jan 11, 2023 08:59:51 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 08:59:51 AM</span>
+	<span class='label end-time'>Jan 11, 2023 09:00:17 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 25s+787ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:00:07 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:00:12 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:00:17 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchSlowResourcesTC39</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:00:17 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchSlowResourcesTC39</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchSlowResourcesTC39.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchSlowResourcesTC39.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchSlowResourcesTC39.jpg'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='40'>
+					<div class='test-heading'>
+						<span class='test-name'>launchSortedDataTablesTC40</span>
+						<span class='test-time'>Jan 11, 2023 09:00:24 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 09:00:24 AM</span>
+	<span class='label end-time'>Jan 11, 2023 09:00:48 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 23s+636ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:00:40 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:00:43 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:00:48 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchSortedDataTablesTC40</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:00:48 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchSortedDataTablesTC40</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchSortedDataTablesTC40.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchSortedDataTablesTC40.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchSortedDataTablesTC40.jpg'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='41'>
+					<div class='test-heading'>
+						<span class='test-name'>launchStatusCodesTC41</span>
+						<span class='test-time'>Jan 11, 2023 09:00:54 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 09:00:54 AM</span>
+	<span class='label end-time'>Jan 11, 2023 09:01:28 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 33s+950ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:01:10 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:01:14 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:01:17 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchStatusCodesTC41</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:01:17 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchStatusCodesTC41</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:01:19 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchStatusCodes200LinkTC41</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:01:19 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchStatusCodes200LinkTC41</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:01:22 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchStatusCodes301LinkTC41</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:01:22 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchStatusCodes301LinkTC41</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:01:25 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchStatusCodes404LinkTC41</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:01:25 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchStatusCodes404LinkTC41</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:01:28 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchStatusCodes500LinkTC41</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:01:28 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchStatusCodes500LinkTC41</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchStatusCodesTC41.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchStatusCodesTC41.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchStatusCodesTC41.jpg'></li>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchStatusCodes200LinkTC41.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchStatusCodes200LinkTC41.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchStatusCodes200LinkTC41.jpg'></li>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchStatusCodes301LinkTC41.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchStatusCodes301LinkTC41.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchStatusCodes301LinkTC41.jpg'></li>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchStatusCodes404LinkTC41.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchStatusCodes404LinkTC41.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchStatusCodes404LinkTC41.jpg'></li>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchStatusCodes500LinkTC41.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchStatusCodes500LinkTC41.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchStatusCodes500LinkTC41.jpg'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='42'>
+					<div class='test-heading'>
+						<span class='test-name'>launchTyposTC42</span>
+						<span class='test-time'>Jan 11, 2023 09:01:36 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 09:01:36 AM</span>
+	<span class='label end-time'>Jan 11, 2023 09:02:00 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 23s+964ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:01:53 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:01:58 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:02:00 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchTyposTC42</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:02:00 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchTyposTC42</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchTyposTC42.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchTyposTC42.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchTyposTC42.jpg'></li>
+							</ul>
+					</div>
+				</li>
+				
+				
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='43'>
+					<div class='test-heading'>
+						<span class='test-name'>launchWYSIWYGEditorTC43</span>
+						<span class='test-time'>Jan 11, 2023 09:02:06 AM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 11, 2023 09:02:06 AM</span>
+	<span class='label end-time'>Jan 11, 2023 09:02:33 AM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 26s+679ms</span>
+</div>
+	<div class='test-steps'>
+		<table class='bordered table-results'>
+			<thead>
+				<tr>
+					<th>Status</th>
+					<th>Timestamp</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:02:22 AM</td>
+					<td class='step-details'>Firefox driver instance created!</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:02:27 AM</td>
+					<td class='step-details'>Launched Internet Heroku application</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:02:33 AM</td>
+					<td class='step-details'>Screenshot captured for Test case: launchWYSIWYGEditorTC43</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:02:33 AM</td>
+					<td class='step-details'>Screenshot of the Test report for Testcase launchWYSIWYGEditorTC43</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+							<ul class='screenshots'>
+								<li><img data-featherlight='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchWYSIWYGEditorTC43.jpg' width='10%' src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchWYSIWYGEditorTC43.jpg' data-src='C:\Haritha\SimpliLearn\Selenium\Projects\Internet.Herokuapp_Project/screenshots/launchWYSIWYGEditorTC43.jpg'></li>
+							</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='test-name'></h5>
+
+			<div id='step-filters' class="right">
+				<span class="blue-text" status="info" alt="info" title="info"><i class="material-icons">info_outline</i></span>
+				<span class="green-text" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></span>
+				<span class="red-text" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></span>
+				<span class="red-text text-darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></span>
+				<span class="pink-text text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></span>
+				<span class="orange-text" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></span>
+				<span class="teal-text" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></span>
+				<span status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></span>
+			</div>
+		</div>
+	</div>
+	<!-- subview right -->
+
+</div>
+<!-- test view -->
+<!-- category view -->
+<!-- exception view -->
+<div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>43</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>208</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Jan 11, 2023 08:38:07 AM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Jan 11, 2023 09:02:40 AM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>0h 24m 33s+464ms</div>
+				</div>
+			</div>
+			<div class='col s4'>
+				<div class='card-panel dashboard-environment'>
+					<span class='right label cyan white-text'>Environment</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Value</th>
+						</tr>
+							<tr>
+								<td>Host Name</td>
+								<td>HerokuApp</td>
+							</tr>
+							<tr>
+								<td>Environment</td>
+								<td>Automation Testing</td>
+							</tr>
+							<tr>
+								<td>User Name</td>
+								<td>simplilearn</td>
+							</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->
+		</div>
+		<!-- container -->
+
+		<script>
+			var statusGroup = {
+				passParent: 41,
+				failParent: 2,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 2,
+				
+				passChild: 5,
+				failChild: 2,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 201,
+				exceptionsChild: 2,
+				
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		
+			<script src='https://cdn.rawgit.com/anshooarora/extentreports-java/fca20fb7653aade98810546ab96a2a4360e3e712/dist/js/extent.js' type='text/javascript'></script>
+		
+		
+ 		<script type='text/javascript'>
+ 		</script>
+	</body>
+	
+</html>
